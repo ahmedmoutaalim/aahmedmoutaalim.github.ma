@@ -1,0 +1,148 @@
+body {  
+    width: 65%;
+    margin: 30px auto;
+
+    line-height: 1.5;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+
+.org {
+    
+    margin: 30 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "part1 part1"
+                         "part2 part3";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),             
+                0 6px 8px 0 rgba(0, 0, 0, 0.1);                     
+    border-radius: 5px;                     
+ 
+
+}
+
+.part1 {
+    padding:30px ;
+    border-radius: 5px;
+    background-color: white;
+    grid-area: part1;
+  
+
+}
+
+
+.part2 {
+    color: white;
+    padding:30px ;
+    border-bottom-left-radius: 5px;
+    grid-area: part2;
+    background-color:  hsl(179, 62%, 43%);
+    
+}
+
+.part3 {
+    padding:30px ;
+    color: white;
+    border-bottom-right-radius: 5px;  
+    grid-area: part3;
+    background-color:  hsl(179, 50%, 58%);
+     
+}
+
+
+/*------------------------------------------TEXT-MODIFICATION-------------------------------------------*/
+ .part1 h1 {
+      color: hsl(179, 62%, 43%) ;
+   
+
+ }
+
+ .part1 h2 {
+
+      font-size:px;
+      color:hsl(71, 73%, 54%);
+ }
+
+ .part1 p {
+
+     color:  hsl(218, 22%, 67%);
+ }   
+
+
+ .dollar{
+
+   color: white;
+   font-size: 30px;
+   
+
+ }
+
+ .month {
+
+    opacity: 0.5;
+ }
+
+ .full {
+
+
+    opacity: 0.8;
+ }
+
+ .part3 p {
+
+    opacity: 0.8;
+
+ }
+
+ /*-----------------------------------------BUTTON-----------------------------------------*/
+.butt {
+    color: white;
+    width: 250px;
+    background-color: hsl(71, 73%, 54%);
+    border-color: hsl(71, 73%, 54%) ;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+}
+
+/*----------------------------------------mobile----------------------------------------*/
+@media  (max-width:500px){
+
+.org{
+    box-shadow: none; 
+    
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "part1 "
+                         "part2 " 
+                         "part3";
+
+    }
+
+.part2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),             
+    0 6px 8px 0 rgba(0, 0, 0, 0.1);  
+    height: 250px;
+    
+    
+}  
+
+
+
+.part3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),             
+    0 6px 8px 0 rgba(0, 0, 0, 0.1);  
+    margin-top:-160px ;
+    border-bottom-left-radius: 5px;
+    padding-bottom: 30px;
+}
+
+}
+    
+    
+ 
+
+
